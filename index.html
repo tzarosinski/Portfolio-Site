@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+	
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="page-wrap">
+		<header class="page-header">
+		  Header
+		</header>
+		<nav class="page-nav">
+		  Nav
+		</nav>
+		<main class="page-main">
+		  <article>
+			
+			<details>
+				<img id="img" onclick="button()"  src="/Images/Prince_Arthas.gif">
+			  <summary>Arthas Toggle Switch</summary>
+			  <p>I have worked on this idea of being able to simply toggle between images on a click. There are so many different ways to accomplish this very minor programming feat that I've gone down one path only to decide that another might be better numerous times. The result is before you, with a Frostmourne curser you can corrupt the destined prince of Lordaeron and transform him into the dreaded Lich King. </p>
+			  
+			</details>
+		  </article>
+		</main>
+		<aside class="page-sidebar">
+		  Aside
+		</aside>
+		<footer class="page-footer">
+		  Footer
+		</footer>
+	  </div>
+
+		
+</div>
+
+   <!-- image URL's
+
+   Lich king pic: https://media4.giphy.com/media/piTF2qfkyjpG4EB5Kk/giphy.mp4?cid=ecf05e47k5kl6nhlzf3mwhnf9hpo865x8cpa2ge0oeb56nom&rid=giphy.mp4&ct=g
+
+   Prince arthas pic: https://static.wikia.nocookie.net/hearthstone/images/1/14/Prince_Arthas.gif/revision/latest/scale-to-width-down/300?cb=20170817160011
+
+-->
+    <script>
+
+
+function button(){
+
+let str = document.getElementById("img").src;
+console.log(str)
+if (str.includes("Prince")){
+
+// console.log("Changing Image")
+
+document.getElementById("img").src ="/Images/Lich_Arthas.gif";
+
+}
+
+
+else{
+
+  // console.log("Changing Image")
+
+document.getElementById("img").src = "/Images/Prince_Arthas.gif";
+
+}
+
+}
+
+
+
+
+    </script>
+  </body>
+</html>
